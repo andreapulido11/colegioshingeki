@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    padding-top: 2%;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 35px;
+    padding: 2%;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+body{
+    background-color: #b2c0ce;
+}
+.logo{
+    width: 90px;
+    height: 100px;
+    margin-left: 5%;
+}
+.derec{
+    width: 225px;
+    height: 140px;
+    border-radius: 8px;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    left: calc(50% - 330px);
+    margin-left: 12%;
+}
+h2{
+    text-align: end;
+}
+h2:hover{
+    
+    color: white;
+}
+h3{
+    text-align: center;
+    font-size: 50px;
+    margin: 4%;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    
+    position: relative;
+    left: 0px;
+    width: 230px;
+    height: 300px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    transition: 1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 25px;
+}
+.card:nth-child(1){
+    background-color: #607f9e;
+}
+.card:nth-child(2){
+    background-color: #535d7efa;
+}
+.card:nth-child(3){
+    background-color: #355c59;
+}
+.card:nth-child(4){
+    background-color: #4c946a;
+}
+.card:nth-child(5){
+    background-color: #8cdb93;
+}
+
+.card:not(:first-child){
+    margin-left: -55px;
+}
+.card:hover{
+    transform: translateY(-20px);
+    font-weight: bold;
+    cursor: pointer;
+}
+.card:hover ~ .card{
+    left: 58px;
+} 
+.galeria:hover .card:not(:hover){
+    filter: blur(20px);
+}
